@@ -981,5 +981,28 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?_v=20230327195509"></script>
 
     <script src="js/app.min.js?_v=20230327195509"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCgS_OuzkqXjwao-ukTNd_LQCExUGk6JLU",
+        authDomain: "intelisplorer.firebaseapp.com",
+        projectId: "intelisplorer",
+        storageBucket: "intelisplorer.appspot.com",
+        messagingSenderId: "600913926445",
+        appId: "1:600913926445:web:01eff8bd2a2eb52b889ba4",
+        measurementId: "G-6QSMZJ9K2H",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>
